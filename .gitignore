@@ -1,1 +1,9 @@
 zzt_*
+.venv/
+.west/
+build/
+dist/
+modules/
+zmk/
+zmk-keyboards-klink/
+zephyr/

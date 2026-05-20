@@ -1,0 +1,25 @@
+[tools]
+python = "3.12"
+
+[env]
+ZEPHYR_SDK_VERSION = "0.17.0"
+
+[tasks.setup]
+description = "Install the local ZMK build dependencies managed by this repo"
+run = """
+bash scripts/zmk-local-setup-sdk.sh
+bash scripts/zmk-local-setup-west.sh
+"""
+
+[tasks.setup-sdk]
+description = "Install the Zephyr SDK under ~/.local for local firmware builds"
+run = "bash scripts/zmk-local-setup-sdk.sh"
+
+[tasks.setup-west]
+description = "Create .venv, install west, and fetch the ZMK west workspace"
+run = "bash scripts/zmk-local-setup-west.sh"
+
+[tasks.build]
+description = "Build agar_mini_ble firmware for the klink board"
+run = "bash scripts/zmk-local-build.sh"
+
