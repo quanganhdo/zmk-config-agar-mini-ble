@@ -30,6 +30,118 @@
             keep-mods = <(MOD_RSFT)>;
         };
 
+        cmd_q_guard: cmd_q_guard {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&rcmd_q_1>, <&both_cmd_q>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        cmd_w_guard: cmd_w_guard {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&rcmd_w_2>, <&both_cmd_w>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        both_cmd_q: both_cmd_q {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp Q>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        both_cmd_w: both_cmd_w {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp W>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_q_1: rcmd_q_1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp N1>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_w_2: rcmd_w_2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp N2>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_e_3: rcmd_e_3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp N3>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_r_4: rcmd_r_4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp N4>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_t_5: rcmd_t_5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp N5>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_y_6: rcmd_y_6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp N6>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_u_7: rcmd_u_7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp N7>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_i_8: rcmd_i_8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp N8>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_o_9: rcmd_o_9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp N9>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        rcmd_p_0: rcmd_p_0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp N0>;
+            mods = <(MOD_RGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
         mo: momentary_layer { display-name = "Layer Momentary"; };
         to: to_layer { display-name = "Layer To"; };
         tog: toggle_layer { display-name = "Layer Toggle"; };
@@ -97,6 +209,8 @@
         ZMK_MACRO(zmk_reserved_bt_conn_0,  bindings = <&out OUT_BLE>, <&bt BT_SEL 0>, <&kp SHOW_LED>;)
         ZMK_MACRO(zmk_reserved_bt_conn_1,  bindings = <&out OUT_BLE>, <&bt BT_SEL 1>, <&kp SHOW_LED>;)
         ZMK_MACRO(zmk_reserved_bt_conn_2,  bindings = <&out OUT_BLE>, <&bt BT_SEL 2>, <&kp SHOW_LED>;)
+        ZMK_MACRO(asana_section, bindings = <&macro_press &kp TAB>, <&macro_tap &kp N>, <&macro_release &kp TAB>;)
+        ZMK_MACRO(asana_focus, bindings = <&macro_press &kp TAB>, <&macro_tap &kp X>, <&macro_release &kp TAB>;)
 
         device_bt1: device_bt1 {
             compatible = "zmk,behavior-hold-tap";

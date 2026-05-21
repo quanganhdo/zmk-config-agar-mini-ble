@@ -23,3 +23,6 @@ run = "bash scripts/zmk-local-setup-west.sh"
 description = "Build agar_mini_ble firmware for the klink board"
 run = "bash scripts/zmk-local-build.sh"
 
+[tasks.deploy]
+description = "Wait for KLINK-BOOT, back up exposed files, and copy the built UF2"
+run = "bash scripts/zmk-local-deploy.sh"
