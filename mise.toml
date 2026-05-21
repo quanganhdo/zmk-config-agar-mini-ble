@@ -1,5 +1,6 @@
 [tools]
 python = "3.12"
+ninja = "latest"
 
 [env]
 ZEPHYR_SDK_VERSION = "0.17.0"
