@@ -36,8 +36,8 @@
         utility {
             bindings = <
 &kp GRAVE    &trans        &trans        &trans       &kp LG(LS(N4))  &kp LG(LS(N5))  &trans       &trans  &trans  &trans          &kp UP_ARROW     &trans           &kp DELETE
-&kp CAPSLOCK &kp C_VOL_DN  &bootloader  &kp C_MUTE  &kp C_VOL_UP  &trans  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &trans  &kp LEFT_ARROW  &kp RIGHT_ARROW  &trans
-&trans       &trans        &trans        &trans       &trans  &trans  &trans       &trans  &trans  &kp DOWN_ARROW  &trans           &trans
+&kp CAPSLOCK &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans  &trans  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &trans  &kp LEFT_ARROW  &kp RIGHT_ARROW  &trans
+&trans       &trans        &trans        &trans       &trans  &bootloader  &trans       &trans  &trans  &kp DOWN_ARROW  &trans           &trans
              &trans       &trans                     &trans                  &trans                            &trans           &trans
             >;
         };
