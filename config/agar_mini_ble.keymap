@@ -40,5 +40,24 @@
              &trans       &trans                     &trans                  &trans                            &trans           &trans
             >;
         };
+
+        // Hold both left Space and Utility, then press the 4 or 5 legend.
+        capture {
+            bindings = <
+&trans  &trans  &trans  &trans  &kp LG(LS(N4))  &kp LG(LS(N5))  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans          &trans           &trans                   &trans                   &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        capture_shortcuts {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 };
