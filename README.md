@@ -11,7 +11,7 @@ It is built for the split 3U + 3U spacebar layout.
 - Hold left Space for numbers and symbols: Q–P produce 1–0, H/J produce `[ ]`,
   semicolon produces `'`, and period produces `/`. Shift gives `{ }` and `?`.
 - Hold the Utility key at the far right of the bottom letter row for HHKB-style
-  arrows: P/L/semicolon/period are up/left/right/down. Utility+Esc produces
+  arrows: P/L/semicolon/period are up/left/right/down. Utility+Tab produces
   backtick (Shift adds `~`); Utility+H enters the bootloader.
 - AeroSpace uses the dedicated Option key. For a workspace number, hold Option
   and left Space, then press the corresponding number-labeled letter key.

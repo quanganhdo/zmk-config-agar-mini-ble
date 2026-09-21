@@ -34,10 +34,10 @@
         // HHKB-style arrows remain on P, L, semicolon, and period.
         utility {
             bindings = <
-&trans       &trans        &trans        &trans       &trans  &trans  &trans       &trans  &trans  &trans          &kp UP_ARROW     &trans           &kp DELETE
+&kp GRAVE    &trans        &trans        &trans       &trans  &trans  &trans       &trans  &trans  &trans          &kp UP_ARROW     &trans           &kp DELETE
 &kp CAPSLOCK &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans  &trans  &bootloader  &trans  &trans  &kp LEFT_ARROW  &kp RIGHT_ARROW  &trans
 &trans       &trans        &trans        &trans       &trans  &trans  &trans       &trans  &trans  &kp DOWN_ARROW  &trans           &trans
-             &trans       &trans                     &trans                  &trans                            &trans           &kp GRAVE
+             &trans       &trans                     &trans                  &trans                            &trans           &trans
             >;
         };
     };
