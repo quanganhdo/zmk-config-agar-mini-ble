@@ -12,7 +12,8 @@ fi
 source .venv/bin/activate
 
 sdk_version="${ZEPHYR_SDK_VERSION:-0.17.0}"
-export ZEPHYR_SDK_INSTALL_DIR="${ZEPHYR_SDK_INSTALL_DIR:-$HOME/.local/zephyr-sdk-$sdk_version}"
+export ZEPHYR_SDK_INSTALL_DIR="${ZEPHYR_SDK_INSTALL_DIR:-$repo_root/.toolchains/zephyr-sdk-$sdk_version}"
+export ZEPHYR_TOOLCHAIN_VARIANT="${ZEPHYR_TOOLCHAIN_VARIANT:-zephyr}"
 
 if [ ! -x "$ZEPHYR_SDK_INSTALL_DIR/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc" ]; then
   echo "Zephyr SDK missing at $ZEPHYR_SDK_INSTALL_DIR. Run: mise run setup-sdk" >&2
@@ -34,4 +35,3 @@ mkdir -p dist
 cp -p build/agar_mini_ble-klink/zephyr/zmk.uf2 dist/agar_mini_ble-klink-zmk.uf2
 
 echo "Built dist/agar_mini_ble-klink-zmk.uf2"
-

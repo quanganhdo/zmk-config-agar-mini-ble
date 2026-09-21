@@ -13,7 +13,7 @@ bash scripts/zmk-local-setup-west.sh
 """
 
 [tasks.setup-sdk]
-description = "Install the Zephyr SDK under ~/.local for local firmware builds"
+description = "Install the Zephyr SDK in this repo for local firmware builds"
 run = "bash scripts/zmk-local-setup-sdk.sh"
 
 [tasks.setup-west]

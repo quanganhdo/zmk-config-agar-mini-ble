@@ -1,5 +1,7 @@
 zzt_*
 .venv/
+.cache/
+.toolchains/
 .west/
 build/
 dist/
