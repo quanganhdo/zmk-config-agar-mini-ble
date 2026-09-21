@@ -5,8 +5,9 @@ It is built for the split 3U + 3U spacebar layout.
 
 ## Keymap
 
-- Base: dedicated Control left of A, Option and Command on the left bottom row,
-  Command and dedicated Tab on the right bottom row. Right Space is plain Space.
+- Base: Tab above the dedicated Control left of A, Option and Command on the
+  left bottom row, Command and Esc on the right bottom row. Right Space is plain
+  Space.
 - Hold left Space for numbers and symbols: Q–P produce 1–0, H/J produce `[ ]`,
   semicolon produces `'`, and period produces `/`. Shift gives `{ }` and `?`.
 - Hold the Utility key at the far right of the bottom letter row for HHKB-style
