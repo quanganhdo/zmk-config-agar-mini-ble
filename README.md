@@ -14,9 +14,9 @@ It is built for the split 3U + 3U spacebar layout.
   arrows: P/L/semicolon/period are up/left/right/down. Utility+Tab produces
   backtick (Shift adds `~`); Utility+A/S/D control volume down/up/mute;
   Utility+H enters the bootloader.
-- Hold left Space and Utility together: press the key printed `4` for a selected
-  area screenshot (Command-Shift-4), or `5` to open the macOS capture and
-  recording toolbar (Command-Shift-5).
+- Hold Utility and press the key printed `4` (R) for a selected area screenshot
+  (Command-Shift-4), or the key printed `5` (T) to open the macOS capture and
+  recording toolbar (Command-Shift-5). Left Space is not needed.
 - AeroSpace uses the dedicated Option key. For a workspace number, hold Option
   and left Space, then press the corresponding number-labeled letter key.
 
